@@ -1,0 +1,58 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+#otra pagina
+GET     /test                            controllers.HomeController.test
+#File Upload Page
+GET     /fileUploadPage                            controllers.HomeController.fileUploadPage
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# 
+GET     /getOkMessage                      controllers.HomeController.getOkMessage
+# 
+GET     /getUnauthorizedMessage            controllers.HomeController.getUnauthorizedMessage
+# 
+GET     /getInternalServerErrorMessage     controllers.HomeController.getInternalServerErrorMessage
+# 
+GET     /redirect                      controllers.HomeController.redirect
+
+# 
+GET     /getOkMessageWithHeaders                      controllers.HomeController.getOkMessageWithHeaders
+# 
+GET     /getOkMessageAddCookie                      controllers.HomeController.getOkMessageAddCookie
+# 
+GET     /getOkMessageRemoveCookie                      controllers.HomeController.getOkMessageRemoveCookie
+# 
+GET     /withLog                                       controllers.HomeController.withLog
+# 
+GET     /withErrorHandler                                       controllers.HomeController.withErrorHandler
+# 
+GET     /printJson                                       controllers.HomeController.printJson
+# 
+GET     /listPlaces                                        controllers.HomeController.listPlaces
+# 
+POST     /savePlace                                        controllers.HomeController.savePlace
+
+
+#Fileupload
++ nocsrf
+POST     /                                       controllers.FileUploadController.upload()
+
+
+
+
+
+#Person controller
+# Home page
+GET     /person                           controllers.PersonController.person
+POST    /addPerson                     controllers.PersonController.addPerson
+GET     /persons                    controllers.PersonController.getPersons
+
+# Map static resources from the /public folder to the /assets URL path
+GET /assets/*file controllers.Assets.versioned(path="/public", file: Asset)

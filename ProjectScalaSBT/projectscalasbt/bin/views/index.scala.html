@@ -1,0 +1,47 @@
+@()
+
+@main("Welcome to Play") {
+  <h1>Welcome to Play!</h1>
+  
+  
+      <p>
+        <a href="@routes.HomeController.getOkMessage">Click here for the getOkMessage action!</a>
+    </p>
+        <p>
+        <a href="@routes.HomeController.getUnauthorizedMessage">Click here for the getUnauthorizedMessage action!</a>
+    </p>
+        <p>
+        <a href="@routes.HomeController.getInternalServerErrorMessage">Click here for the getInternalServerErrorMessage action!</a>
+    </p>
+        <p>
+        <a href="@routes.HomeController.redirect">Click here for the redirect action!</a>
+    </p>
+    
+     <p>
+        <a href="@routes.HomeController.getOkMessageWithHeaders">Click here for the getOkMessageWithHeaders action!</a>
+    </p>
+    
+         <p>
+        <a href="@routes.HomeController.getOkMessageAddCookie">Click here for the getOkMessageAddCookie action!</a>
+    </p>
+    
+         <p>
+        <a href="@routes.HomeController.getOkMessageRemoveCookie">Click here for the getOkMessageRemoveCookie action!</a>
+    </p>
+  
+     <p>
+        <a href="@routes.HomeController.withLog">Click here for the withLog action!</a>
+    </p>
+    
+       <p>
+        <a href="@routes.HomeController.withErrorHandler">Click here for the withErrorHandler action!</a>
+    </p>
+    
+     <p>
+        <a href="@routes.HomeController.printJson">Click here for the printJson action!</a>
+    </p>
+    
+         <p>
+        <a href="@routes.HomeController.listPlaces">Click here for the listPlaces action!</a>
+    </p>
+}

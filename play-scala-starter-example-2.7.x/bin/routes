@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(file)
+
+#Calculator Functions
+
+#Sum
+POST                   /sum		     controllers.CalculatorController.sum
+#Substract
+POST                  /substract     controllers.CalculatorController.substract
+#Multiply
+POST                  /multiply      controllers.CalculatorController.multiply   
+#Divide 
+POST                 /divide         controllers.CalculatorController.divide
+
+#Person Functions.
+
+#getPersonById   PATH PARAMETER
+GET                /getPersonById/:id    controllers.PersonController.getPersonById(id: Long)
+
+#listPeopleByName  QueryParameter
+GET               /listPeopleByName     controllers.PersonController.listPeopleByName(nameFilter: String)

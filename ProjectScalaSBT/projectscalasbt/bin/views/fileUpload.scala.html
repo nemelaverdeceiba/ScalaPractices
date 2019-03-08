@@ -1,0 +1,10 @@
+@* fileUpload Template File *@
+@helper.form(action = routes.FileUploadController.upload, 'enctype -> "multipart/form-data") {
+    
+    <input type="file" name="picture">
+    
+    <p>
+        <input type="submit">
+    </p>
+    
+}
