@@ -30,3 +30,10 @@ GET                /getPersonById/:id    controllers.PersonController.getPersonB
 
 #listPeopleByName  QueryParameter
 GET               /listPeopleByName     controllers.PersonController.listPeopleByName(nameFilter: String)
+
+#JDBC
+GET     /jdbcTest                                              controllers.ScalaControllerInject.jdbcTest
+
+#Consume ws
+GET    /consumeListPlaces									   controllers.WSClientController.consumeListPlaces
+GET    /consumeSavePlace									   controllers.WSClientController.consumeSavePlace

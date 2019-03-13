@@ -17,3 +17,18 @@ scalacOptions ++= Seq(
   "-deprecation",
   "-Xfatal-warnings"
 )
+
+//JDBC
+libraryDependencies += jdbc
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.41"
+
+//Cache
+libraryDependencies ++= Seq(
+  ehcache
+)
+
+libraryDependencies += jcache
+
+//Consume WSClient
+libraryDependencies += ws
+libraryDependencies += ehcache

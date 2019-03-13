@@ -24,6 +24,7 @@ libraryDependencies += "com.h2database" % "h2" % "1.4.196"
 
 //JDBC
 //libraryDependencies += jdbc
+//libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.41"
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "com.ceiba.controllers._"
@@ -37,3 +38,8 @@ libraryDependencies ++= Seq(
   ehcache
 )
 libraryDependencies += jcache
+
+
+
+//Cambiar puerto a 9001
+PlayKeys.devSettings := Seq("play.server.http.port" -> "9001")

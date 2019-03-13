@@ -56,3 +56,14 @@ GET     /persons                    controllers.PersonController.getPersons
 
 # Map static resources from the /public folder to the /assets URL path
 GET /assets/*file controllers.Assets.versioned(path="/public", file: Asset)
+
+#Error Handling
+GET     /errorHandling                                        controllers.HomeController.errorHandling
+GET     /errorHandling2                                        controllers.HomeController.errorHandling2
+
+
+#JDBC
+#GET     /jdbcTest                                              controllers.ScalaControllerInject.jdbcTest
+
+#Akka Sistema de actores
+GET      /sayHello/:name                                             controllers.ActorController.sayHello(name: String)

@@ -169,5 +169,15 @@ def savePlace = Action(parse.json) { request =>
   def fileUploadPage() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.fileUpload())
   }
+  
+  //Probar error handling
+  def errorHandling()= Action {
+    InternalServerError
+}
+  
+   //Probar error handling
+  def errorHandling2()= Action {
+    InternalServerError("Error interno del servidor")
+}
 
 }

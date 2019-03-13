@@ -8,7 +8,8 @@ CREATE TABLE Person (
     lastname varchar(255) NOT NULL,
     identification int NOT NULL,    
     identificationtype varchar(10) NOT NULL,
-    age int NOT NULL,   
+    age int NOT NULL,  
+    birthday date NOT NULL,
     PRIMARY KEY (id)
     
 );
